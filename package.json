@@ -1,0 +1,25 @@
+{
+  "name": "smartlog-wms",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "ide:sync": "node scripts/ide-sync.mjs",
+    "ide:watch": "node scripts/ide-watch.mjs",
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@types/node": "^24.0.0",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "typescript": "^5.7.3"
+  }
+}

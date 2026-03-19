@@ -1,0 +1,71 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "npm: install",
+      "type": "shell",
+      "command": "npm install",
+      "problemMatcher": []
+    },
+    {
+      "label": "ide: sync (on open)",
+      "type": "shell",
+      "command": "npm run ide:sync",
+      "problemMatcher": [],
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "npm: checks",
+      "type": "shell",
+      "command": "npm run lint && npm run typecheck && npm test",
+      "problemMatcher": [],
+      "dependsOn": ["npm: install"]
+    },
+    {
+      "label": "ide: watch",
+      "type": "shell",
+      "command": "npm run ide:watch",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "npm: dev",
+      "type": "shell",
+      "command": "npm run dev",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "npm: lint",
+      "type": "shell",
+      "command": "npm run lint",
+      "problemMatcher": []
+    },
+    {
+      "label": "npm: typecheck",
+      "type": "shell",
+      "command": "npm run typecheck",
+      "problemMatcher": []
+    },
+    {
+      "label": "npm: test",
+      "type": "shell",
+      "command": "npm test",
+      "problemMatcher": []
+    },
+    {
+      "label": "docker: compose up",
+      "type": "shell",
+      "command": "docker compose up --build",
+      "problemMatcher": []
+    },
+    {
+      "label": "docker: compose down",
+      "type": "shell",
+      "command": "docker compose down",
+      "problemMatcher": []
+    }
+  ]
+}

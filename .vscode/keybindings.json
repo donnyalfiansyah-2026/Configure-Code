@@ -1,0 +1,32 @@
+[
+  {
+    "key": "ctrl+shift+b",
+    "command": "workbench.action.tasks.runTask",
+    "args": "npm: checks"
+  },
+  {
+    "key": "ctrl+alt+d",
+    "command": "workbench.action.tasks.runTask",
+    "args": "npm: dev"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "eslint.executeAutofix"
+  },
+  {
+    "key": "ctrl+alt+/",
+    "command": "editor.action.blockComment"
+  },
+  {
+    "key": "ctrl+k ctrl+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "ctrl+k ctrl+d",
+    "command": "workbench.view.extension.docker"
+  }
+]
